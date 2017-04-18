@@ -1,0 +1,57 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Layout.master.cs" Inherits="Projeto.Web.RestrictedArea.Templates.Layout" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>COTI INFORMÁTICA</title>
+    <link href="../../Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../Content/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="../../Content/StyleTopBar.css" rel="stylesheet" />
+    <link href="../../Content/Style.css" rel="stylesheet" />
+
+    
+</head>
+<body class="container">
+    
+    <form id="form1" runat="server">
+
+        <div class="row">
+        <div class="col-md-8 text-center">
+        <div class="well-sm">
+            <h2>Área de administração</h2>
+        </div>
+        </div>
+        <div class="col-md-4 text-right">
+            <br /><br />
+             Olá <asp:Label ID="lblUsario" runat="server" />, <asp:Label ID="lblSalutation" runat="server" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <asp:Button ID="btnLogout" runat="server" cssClass="btn btn-primary btn-sm right" Text="Logout" OnClick="btnLogout_Click" />
+           
+        </div>
+    </div>
+
+        <div id="menu">
+		<ul>
+			<li><a href="/RestrictedArea/AddBook.aspx">Cadastrar Livro</a></li>
+			<li><a href="/RestrictedArea/FindBook.aspx">Buscar Livro</a></li>
+			<li><a href="/RestrictedArea/FindBook.aspx">Editar Livro</a></li>
+			<li><a href="/RestrictedArea/FindBook.aspx">Excluir Livro</a></li>
+		</ul>
+	</div>
+
+        <div>
+
+           
+            <!-- Local para a entrada do conteúdo das demais páginas -->
+            <asp:ContentPlaceHolder ID="conteudoPrincipal" runat="server">
+
+            </asp:ContentPlaceHolder>
+
+        </div>
+
+
+    </form>
+
+</body>
+</html>

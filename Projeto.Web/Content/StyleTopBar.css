@@ -1,0 +1,31 @@
+﻿body {
+			padding:0px;
+			margin:0px;
+		}
+ 
+		#menu ul {
+			padding:0px;
+			margin:0px;
+			float: left;
+			width: 100%;
+			background-color:#286090;
+			list-style:none;
+			font:120% Arial;
+            color: #fff;
+		}
+ 
+		#menu ul li { display: inline; 
+            color: #fff;}
+ 
+		#menu ul li a {
+			background-color:#286090;
+			text-decoration: none;
+			border-bottom:3px solid #286090;
+			padding: 2px 10px;
+			float:left;
+            color: #fff;
+		}
+ 
+		#menu ul li a:hover {
+			border-bottom:3px solid #b9b7b7;
+		}

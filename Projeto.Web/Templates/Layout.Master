@@ -1,0 +1,39 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Layout.master.cs" Inherits="Projeto.Web.Templates.Layout" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Catálogo de livros</title>
+    
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="../Content/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="../Content/Style.css" rel="stylesheet" />
+
+
+</head>
+<body class="container">
+
+    <div class="row">
+        <br />
+        <div class="col-md-11">
+        <h2 class="text-center">Sistema de controle de livros</h2>
+        <hr />
+        </div>
+        <div class="col-md-1">
+            <button onclick="location.href='/Views/Login.aspx';" class="btn btn-primary btn-sm">Login</button>
+        </div>
+    </div>
+
+    <form id="form1" runat="server">
+    <div>
+        
+        <!-- Área para entrada co conteúdo das demais páginas -->
+        <asp:ContentPlaceHolder ID="conteudoPrincipal" runat="server">
+
+        </asp:ContentPlaceHolder>
+        
+    </div>
+    </form>
+</body>
+</html>

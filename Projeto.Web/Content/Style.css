@@ -1,0 +1,14 @@
+﻿    #centro {
+	width:800px;
+	height:100px;
+	position:absolute;
+	top:30%;
+	left:40%;
+	margin-top:-50px;
+	margin-left:-50px;
+    text-align:center;
+}
+    .img-200-200 {   
+   height: 200px;
+}
+
